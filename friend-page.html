@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bạn bè | Facebook</title>
+    <link rel="shortcut icon" href="img/2023_Facebook_icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-friend-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="header-wrap">
+        <div class="header-left">
+            <a href="index.html"><img src="img/2023_Facebook_icon.svg" alt=""></a>
+            <div class="header-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm trên facebook">
+            </div>
+        </div>
+        <div class="header-mid">
+            <a  class="header-mid-option" href="index.html"><i class="fas fa-home"></i><div class="sub-title s-home"><p>Trang chủ</p></div></a>
+            <a id="active" class="header-mid-option" href="friend-page.html"><i class="fa-solid fa-user-group"></i><div class="sub-title s-friend"><p>Bạn bè</p></div></a>
+            <a class="header-mid-option" href="video-page.html"><i id="size22" class="tv-icon material-symbols-outlined">live_tv</i><div class="sub-title s-video"><p>Video</p></div></a>
+            <a class="header-mid-option" href="#"><i class="store-icon fa-solid fa-store"></i><div class="sub-title s-market"><p>Marketplace</p></div></a>
+            <a class="header-mid-option" href="#"><i class="group-icon fas fa-users"></i><div class="sub-title s-group"><p>Nhóm</p></div></a>
+        </div>
+        <div class="header-right">
+            <a class="icon-backround" href="#"><i class="material-symbols-outlined">apps</i><div class="sub-title"><p>Menu</p></div></a>
+            <a class="icon-backround" href="#"><i class="fab fa-facebook-messenger"></i><div class="sub-title"><p>Messenger</p></div></a>
+            <a class="icon-backround" href="#"><i class="fas fa-bell"></i><div class="sub-title"><p>Thông báo</p></div></a>
+            <a class="icon-backround" href="#" onclick="openCard()">
+                <img class="user-avt" src="img/avata.jpg" alt="" >
+                <div class="sub-title"><p>Tài khoản</p></div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="title">
+                <h2>Bạn bè</h2>
+                <a href="" class="icon-backround"><i class="fa-solid fa-gear"></i></a>
+            </div>
+            <div class="list">
+                <div id="home" class="menu-content">
+                    <div  class="icon-backround"><i class="fa-solid fa-user-group"></i></div>
+                    <span>Trang chủ</span>
+                </div>
+                <a href="" class="menu-content">
+                    <div class="icon-backround"><i class="fa-solid fa-user-minus"></i></div>
+                    <span>Lời mời kết bạn</span>
+                    <i id="right-icon" class="fa-solid fa-chevron-right"></i>
+                </a>
+                <a href="" class="menu-content">
+                    <div class="icon-backround"><i class="fa-solid fa-user-plus"></i></div>
+                    <span>Gợi ý</span>
+                    <i id="right-icon" class="fa-solid fa-chevron-right"></i>
+                </a>
+                <a href="" class="menu-content">
+                    <div class="icon-backround"><i class="fa-solid fa-user-minus"></i></div>
+                    <span>Tất cả bạn bè</span>
+                    <i id="right-icon" class="fa-solid fa-chevron-right"></i>
+                </a>
+                <a href="" class="menu-content">
+                    <div class="icon-backround"><i class="fa-solid fa-gift"></i></div>
+                    <span>Sinh nhật</span>
+                </a>
+                <a href="" class="menu-content">
+                    <div class="icon-backround"><i class="fa-solid fa-user-gear"></i></div>
+                    <span>Danh sách bạn bè</span>
+                    <i id="right-icon" class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="title">
+                <h3>Những người bạn có thể biết</h3>
+                <a href="#">Xem tất cả</a>
+            </div>
+
+            <div class="people-wrap">
+
+                <div class="people">
+                    <a href="#" class="people-img"><img src="img/fr3.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Khôi Ngô Tuấn Tú</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+                                <a href="#"><img src="img/avata.jpg" alt=""></a>
+                                <a href="#"><p>13 bạn chung</p></a>
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                <div class="people">
+                    <a href="#" class="people-img"><img src="img/avatar1.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Đinh Tuấn</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+                                <a href="#"></a>
+                                <a href="#"><p></p></a>
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="img/fr9.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Mỹ Vân Đỗ</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="img/fr1.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Trung Kiên</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+                                <a href="#"><img src="img/avatarluan.jpg" alt=""></a>
+                                <a href="#"><p>3 bạn chung</p></a>
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="img/fr10.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Lương Mỹ Kiều</p></a>
+                        <div class="people-friend">
+                            <div class="show"></div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="img/fr5.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Shoto Haru</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+                                <a href="#"><img src="img/avatarkhoi.jpg" alt=""></a>
+                                <a href="#"><p>1 bạn chung</p></a>
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="img/fr6.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Dũng DevC</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+                                <a href="#"><img src="img/tiendat.jpg" alt=""></a>
+                                <a href="#"><p>100 bạn chung</p></a>
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="img/fr7.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Quoc Vinh</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+                                <a href="#"><img src="img/khoidai.jpg" alt=""></a>
+                                <a href="#"><p>20 bạn chung</p></a>
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="img/fr8.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Billie Eilish</p></a>
+                        <div class="people-friend">
+                            <div class="show">
+                                <a href="#"><img src="img/ez.jpg" alt=""></a>
+                                <a href="#"><p>1 bạn chung</p></a>
+                            </div>
+                            <p class="text"></p>
+                        </div>
+                        <div class="add-button"><p>Thêm bạn bè</p></div>
+                        <div class="remove-button"><p>Gỡ</p></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-bubble-wrap">
+            <div class="chat-bubble">
+                <a href="#">
+                    <div class="write-box">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="chat-bubble" id="chatBubble">
+                <div class="online">
+                    <img src="img/avata.jpg" alt="">
+                    <img class="close-btn" src="img/close.png" id="close-chat">
+                    <div class="title">
+                        <p>Khoa Pham</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<script src="js/friend.js"></script>
+</body>
+</html>
